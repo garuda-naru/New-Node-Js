@@ -1,0 +1,30 @@
+{
+  "name": "node_app",
+  "version": "1.0.0",
+  "description": "node course package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "execute": "node index.js",
+    "watch": "node index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garuda-naru/New-Node-Js.git"
+  },
+  "author": "Narender",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garuda-naru/New-Node-Js/issues"
+  },
+  "homepage": "https://github.com/garuda-naru/New-Node-Js#readme",
+  "dependencies": {
+    "cowsay": "^1.5.0",
+    "lodash": "^4.17.21",
+    "webpack": "^5.75.0"
+  },
+  "devDependencies": {
+    "uuid": "^9.0.0"
+  }
+}
