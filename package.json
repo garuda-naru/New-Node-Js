@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/garuda-naru/New-Node-Js#readme",
   "dependencies": {
+    "axios": "^1.2.1",
     "cowsay": "^1.5.0",
     "lodash": "^4.17.21",
     "webpack": "^5.75.0"
