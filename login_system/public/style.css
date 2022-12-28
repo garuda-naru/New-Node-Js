@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+body {
+    font-family: 'Sevillana', cursive;
+}
+center-div {
+    padding-top: 10%;
+}
+.btn.btn-success {
+    padding: 5px 60px;
+}
+
+form {
+    padding: 0 3em;
+}
+
+#login .title > span {
+    font-size: .8em;
+}
