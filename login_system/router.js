@@ -11,11 +11,32 @@ const Credential = {
 router.post('/login',(req,res)=> {
     if(req.body.email == Credential.email && req.body.password == Credential.password) {
         req.session.user = req.body.email;
-        // res.redirect('/dashboard')
-        res.end('Login Successful..!')
+        res.redirect('/route/dashboard')
+        // res.end('Login Successful..!')
     } else {
         res.end('Invalid Credential Entered...!')
     }
+})
+
+//route for Dashboard
+router.get('/dashboard',(req,res)=> {
+    if(req.session.user) {
+        res.render('dashboard',{user : req.session.user})
+    } else {
+        res.send("Unauthorize User")
+    }
+});
+
+//logout route
+router.get('/logout',(req,res)=>{
+    req.session.destroy(function(err) {
+        if (err) {
+            console.log(err);
+            res.send("Error")
+        } else {
+            res.render('base',{title:"Express",logout:"Logout Successfully...!"})
+        }
+    })
 })
 
 

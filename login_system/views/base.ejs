@@ -10,6 +10,11 @@
             <span>
                 Log in for the existing user
             </span>
+            <% if(locals.logout){ %>
+                <div class="alter alert-success text-center">
+                    <%= logout %> 
+                </div>
+            <% } %>  
         </div>
         <form action="/route/login" method="POST">
             <div class="form-group">

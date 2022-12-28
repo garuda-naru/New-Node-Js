@@ -5,7 +5,7 @@
  const session = require('express-session');
  const {v4:uuidv4} = require("uuid");
  const router = require('./router')
- const port = process.env.PORT || 3000;
+ const port = process.env.PORT || 8080;
 
  app.use(bodyparser.json())
  app.use(bodyparser.urlencoded({extended: true}))
@@ -27,4 +27,4 @@ app.use('/route',router)
     res.render('base',{title:"Login System"});
  })
 
- app.listen(port,()=> {console.log("Server running at http://localhost:3000")})
+ app.listen(port,()=> {console.log(`Server running at http://localhost:${port}`)})
