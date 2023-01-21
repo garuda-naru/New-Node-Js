@@ -5,6 +5,7 @@ body {
 }
 center-div {
     padding-top: 10%;
+    background-color: goldenrod;
 }
 .btn.btn-success {
     padding: 5px 60px;
